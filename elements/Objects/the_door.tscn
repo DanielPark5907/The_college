@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://crdhmx2ggfxjo"]
+
+[ext_resource type="PackedScene" uid="uid://b2t6isobfl1bj" path="res://elements/Tilemaps/tile_map_dungeon.tscn" id="1_tu278"]
+[ext_resource type="Script" path="res://elements/Objects/The_door.gd" id="2_p70uo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4joqb"]
+size = Vector2(32, 28)
+
+[node name="The_door" type="Node2D"]
+
+[node name="TileMap" parent="." instance=ExtResource("1_tu278")]
+layer_0/tile_data = PackedInt32Array(0, 720899, 24, 65536, 720899, 25, 1, 720899, 268435480, 65537, 720899, 268435481)
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("2_p70uo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(15, 17)
+shape = SubResource("RectangleShape2D_4joqb")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

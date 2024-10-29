@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7uiok3lh45s5"]
+
+[ext_resource type="Script" path="res://scenes/UI/options_menu.gd" id="1_8kglv"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8kglv")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 375.0
+offset_top = 285.0
+offset_right = -402.0
+offset_bottom = -297.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(187, 33)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Volume" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Volume"
+
+[node name="Back" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Back"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Volume" to="." method="_on_volume_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]
