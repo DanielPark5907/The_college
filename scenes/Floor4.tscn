@@ -31,5 +31,6 @@ rotation = 3.14159
 
 [node name="Area2D" parent="Stairs" index="2"]
 target_floor_ladder = "res://scenes/Floor3.tscn"
+target_position_for_player = Vector2(20, 220)
 
 [editable path="Stairs"]

@@ -31,15 +31,17 @@ position = Vector2(1101, 546)
 
 [node name="Area2D" parent="The_door_exit" index="1"]
 target_audience = "res://scenes/social_behavior/Bridge.tscn"
+target_spawn_for_player = Vector2(95, 85)
 
 [node name="The_door_to_bridge" parent="." instance=ExtResource("3_hltmy")]
 position = Vector2(573, 547)
 
 [node name="Area2D" parent="The_door_to_bridge" index="1"]
 target_audience = "res://mega_game.tscn"
+target_spawn_for_player = Vector2(-455, -445)
 
 [node name="Adventurer" parent="." instance=ExtResource("4_duo58")]
-position = Vector2(589, 513)
+position = Vector2(591, 517)
 
 [editable path="Stairs_up"]
 [editable path="Stairs_down"]

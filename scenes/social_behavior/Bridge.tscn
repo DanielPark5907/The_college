@@ -29,6 +29,7 @@ position = Vector2(80, 46)
 
 [node name="Area2D" parent="The_door_to_social_behavior" index="1"]
 target_audience = "res://scenes/social_behavior/sb_floor_1.tscn"
+target_spawn_for_player = Vector2(1115, 520)
 
 [node name="The_door_to_college" parent="." instance=ExtResource("2_wme1x")]
 position = Vector2(832, 719)
@@ -37,7 +38,9 @@ position = Vector2(832, 719)
 layer_0/y_sort_enabled = true
 
 [node name="Area2D" parent="The_door_to_college" index="1"]
+position = Vector2(0, -2)
 target_audience = "res://scenes/Floor1.tscn"
+target_spawn_for_player = Vector2(110, 30)
 
 [node name="Adventurer" parent="." instance=ExtResource("3_sdltl")]
 position = Vector2(847, 677)

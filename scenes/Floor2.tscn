@@ -22,13 +22,14 @@ layer_3/z_index = 1
 layer_3/tile_data = PackedInt32Array(262169, 196611, 70, 327705, 196611, 71, 262171, 655363, 66, 327707, 655363, 67, 262172, 720899, 66, 327708, 720899, 67, 589857, 262147, 68, 655393, 262147, 69, 720929, 262147, 70, 589858, 327683, 68, 655394, 327683, 69, 720930, 327683, 70, 1179684, 3, 68, 1245220, 3, 69, 1179685, 65539, 68, 1245221, 65539, 69, 1179686, 131075, 68, 1245222, 131075, 69, 1310751, 3, 68, 1376287, 3, 69, 1310752, 65539, 68, 1376288, 65539, 69, 1310753, 131075, 68, 1376289, 131075, 69, 589867, 262147, 73, 524331, 262147, 72, 589868, 327683, 73, 524332, 327683, 72, 589869, 393219, 73, 524333, 393219, 72, 393247, 786435, 67, 327711, 786435, 66)
 
 [node name="Adventurer" parent="." instance=ExtResource("2_itp5j")]
-position = Vector2(406, 185)
+position = Vector2(409, 223)
 
 [node name="Stairs_up" parent="." instance=ExtResource("3_eh52x")]
 position = Vector2(798, 190)
 
 [node name="Area2D" parent="Stairs_up" index="2"]
 target_floor_ladder = "res://scenes/Floor3.tscn"
+target_position_for_player = Vector2(800, 220)
 
 [node name="Stair_down" parent="." instance=ExtResource("3_eh52x")]
 position = Vector2(48, 270)
@@ -36,6 +37,7 @@ rotation = 3.14159
 
 [node name="Area2D" parent="Stair_down" index="2"]
 target_floor_ladder = "res://scenes/Floor1.tscn"
+target_position_for_player = Vector2(810, 230)
 
 [editable path="Stairs_up"]
 [editable path="Stair_down"]

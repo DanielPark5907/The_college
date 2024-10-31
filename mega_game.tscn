@@ -47,12 +47,14 @@ position = Vector2(446, 64)
 
 [node name="Area2D" parent="The_door_to_college" index="1"]
 target_audience = "res://scenes/Floor1.tscn"
+target_spawn_for_player = Vector2(410, 400)
 
 [node name="The_door_social_behavior" parent="." instance=ExtResource("4_jvrcn")]
 position = Vector2(-474, -542)
 
 [node name="Area2D" parent="The_door_social_behavior" index="1"]
 target_audience = "res://scenes/social_behavior/sb_floor_1.tscn"
+target_spawn_for_player = Vector2(590, 515)
 
 [node name="The_roof" parent="." instance=ExtResource("5_21h3e")]
 position = Vector2(45, -378)

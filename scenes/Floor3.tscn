@@ -31,6 +31,7 @@ position = Vector2(782, 190)
 
 [node name="Area2D" parent="Stairs_up" index="2"]
 target_floor_ladder = "res://scenes/Floor4.tscn"
+target_position_for_player = Vector2(20, 220)
 
 [node name="Stairs_down" parent="." instance=ExtResource("3_1l7by")]
 position = Vector2(32, 270)
@@ -38,6 +39,7 @@ rotation = 3.14159
 
 [node name="Area2D" parent="Stairs_down" index="2"]
 target_floor_ladder = "res://scenes/Floor2.tscn"
+target_position_for_player = Vector2(30, 230)
 
 [editable path="Stairs_up"]
 [editable path="Stairs_down"]

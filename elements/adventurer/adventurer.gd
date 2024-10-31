@@ -6,7 +6,12 @@ const superspeed = 175.0
 
 var last_direction = Vector2(0, 1)  # Направление "вниз" по умолчанию
 
+func _ready() -> void:
+	position = PlayerState.position
+
 func _physics_process(delta: float) -> void:
+	PlayerState.position = position
+	
 	if Engine.time_scale == 0:
 		return
 	

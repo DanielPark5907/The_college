@@ -16,6 +16,7 @@ layer_0/y_sort_enabled = true
 
 [node name="Area2D" parent="The_door_to_bridge" index="1"]
 target_audience = "res://scenes/social_behavior/Bridge.tscn"
+target_spawn_for_player = Vector2(845, 700)
 
 [node name="TileMap" parent="." instance=ExtResource("1_0stp7")]
 layer_0/name = "ground"
@@ -29,13 +30,16 @@ layer_1/tile_data = PackedInt32Array(-65536, 983042, 1, 0, 983042, 1, 65536, 983
 position = Vector2(400, 416)
 
 [node name="Area2D" parent="The_door" index="1"]
+position = Vector2(1, 0)
 target_audience = "res://mega_game.tscn"
+target_spawn_for_player = Vector2(460, 145)
 
 [node name="Stairs" parent="." instance=ExtResource("2_gt1to")]
 position = Vector2(798, 190)
 
 [node name="Area2D" parent="Stairs" index="2"]
 target_floor_ladder = "res://scenes/Floor2.tscn"
+target_position_for_player = Vector2(810, 230)
 
 [node name="Adventurer" parent="." instance=ExtResource("3_dgpci")]
 position = Vector2(411, 231)
