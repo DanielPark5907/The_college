@@ -3,6 +3,7 @@ extends CharacterBody2D
 const speed = 125.0
 const superspeed = 175.0
 @onready var animation = $AnimatedSprite2D
+@export var inv: Inv
 
 var last_direction = Vector2(0, 1)  # Направление "вниз" по умолчанию
 

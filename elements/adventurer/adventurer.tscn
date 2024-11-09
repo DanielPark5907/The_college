@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://pxpid672mhgn"]
+[gd_scene load_steps=8 format=3 uid="uid://pxpid672mhgn"]
 
 [ext_resource type="Script" path="res://elements/adventurer/adventurer.gd" id="1_uxlhi"]
 [ext_resource type="Script" path="res://elements/adventurer/camera_2d.gd" id="2_41tjm"]
 [ext_resource type="SpriteFrames" uid="uid://dhsxag8n3fhuh" path="res://elements/adventurer/Player_animations.tres" id="2_ihh8g"]
 [ext_resource type="PackedScene" uid="uid://nwqg3vx7atws" path="res://scenes/UI/pause_menu.tscn" id="2_owtm8"]
+[ext_resource type="Resource" uid="uid://dmn7lurf2hdal" path="res://elements/inventory/playerinv.tres" id="2_rs681"]
+[ext_resource type="PackedScene" uid="uid://b8iltyyccwfua" path="res://elements/inventory/Inv_UI.tscn" id="6_qx62l"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wat2w"]
 radius = 5.0
@@ -15,6 +17,7 @@ position = Vector2(1, 0)
 collision_layer = 5
 collision_mask = 5
 script = ExtResource("1_uxlhi")
+inv = ExtResource("2_rs681")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 6)
@@ -54,5 +57,11 @@ offset_left = -100.0
 offset_top = -50.5
 offset_right = 100.0
 offset_bottom = 50.5
+
+[node name="Inv_UI" parent="." instance=ExtResource("6_qx62l")]
+offset_left = 12.0
+offset_top = -80.0
+offset_right = 95.0
+offset_bottom = -18.0
 
 [editable path="Camera2D/Menu"]
