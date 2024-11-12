@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://tfsr7gf78gty"]
+[gd_scene load_steps=7 format=3 uid="uid://tfsr7gf78gty"]
 
 [ext_resource type="Texture2D" uid="uid://dhwnqwjlt3oxv" path="res://assets/TileMap/grass.png" id="1_ld1dd"]
 [ext_resource type="PackedScene" uid="uid://b2t6isobfl1bj" path="res://elements/Tilemaps/tile_map_dungeon.tscn" id="1_wqpxq"]
 [ext_resource type="PackedScene" uid="uid://pxpid672mhgn" path="res://elements/adventurer/adventurer.tscn" id="2_mo0uf"]
 [ext_resource type="PackedScene" uid="uid://crdhmx2ggfxjo" path="res://elements/Objects/the_door.tscn" id="4_jvrcn"]
 [ext_resource type="PackedScene" uid="uid://cjoa8p8dyh62p" path="res://elements/Objects/the_roof.tscn" id="5_21h3e"]
+[ext_resource type="PackedScene" uid="uid://cwkpkjlqjpylx" path="res://elements/inventory/Items/stick_collectable.tscn" id="6_3hba5"]
 
 [node name="MegaGame" type="Node2D"]
 y_sort_enabled = true
@@ -38,10 +39,6 @@ texture = ExtResource("1_ld1dd")
 region_enabled = true
 region_rect = Rect2(0, 0, 1152, 648)
 
-[node name="Adventurer" parent="." instance=ExtResource("2_mo0uf")]
-top_level = true
-position = Vector2(539, 438)
-
 [node name="The_door_to_college" parent="." instance=ExtResource("4_jvrcn")]
 position = Vector2(446, 64)
 
@@ -59,7 +56,23 @@ target_spawn_for_player = Vector2(590, 515)
 [node name="The_roof" parent="." instance=ExtResource("5_21h3e")]
 position = Vector2(45, -378)
 
-[editable path="Adventurer"]
-[editable path="Adventurer/Camera2D/Menu"]
+[node name="Stick_collectable" parent="." instance=ExtResource("6_3hba5")]
+position = Vector2(-155, 97)
+
+[node name="Stick_collectable2" parent="." instance=ExtResource("6_3hba5")]
+position = Vector2(-90, 129)
+
+[node name="Stick_collectable3" parent="." instance=ExtResource("6_3hba5")]
+position = Vector2(-1, 141)
+
+[node name="Stick_collectable4" parent="." instance=ExtResource("6_3hba5")]
+position = Vector2(-129, 50)
+
+[node name="Adventurer" parent="." instance=ExtResource("2_mo0uf")]
+top_level = true
+position = Vector2(539, 438)
+
 [editable path="The_door_to_college"]
 [editable path="The_door_social_behavior"]
+[editable path="Adventurer"]
+[editable path="Adventurer/Camera2D/Menu"]

@@ -59,6 +59,7 @@ offset_right = 100.0
 offset_bottom = 50.5
 
 [node name="Inv_UI" parent="." instance=ExtResource("6_qx62l")]
+visibility_layer = 512
 offset_left = 12.0
 offset_top = -80.0
 offset_right = 95.0

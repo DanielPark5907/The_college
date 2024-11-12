@@ -60,3 +60,6 @@ func _physics_process(delta: float) -> void:
 			animation.play("run_down" if is_running else "walk_down")
 
 	move_and_slide()
+
+func collect(item):
+	inv.insert(item)
