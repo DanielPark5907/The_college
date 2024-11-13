@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://ed3xdsqgdrjo"]
+
+[ext_resource type="Texture2D" uid="uid://cqdg3yox4n4ys" path="res://assets/inventory-slot.png" id="1_cdo3p"]
+
+[node name="Dialogue" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = -60.0
+offset_top = -85.0
+offset_right = 60.0
+offset_bottom = -12.0
+texture = ExtResource("1_cdo3p")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 3
+
+[node name="Name" type="RichTextLabel" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 74.0
+offset_bottom = 27.0
+scale = Vector2(0.4, 0.4)
+text = "Name:"

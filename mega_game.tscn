@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://tfsr7gf78gty"]
+[gd_scene load_steps=8 format=3 uid="uid://tfsr7gf78gty"]
 
 [ext_resource type="Texture2D" uid="uid://dhwnqwjlt3oxv" path="res://assets/TileMap/grass.png" id="1_ld1dd"]
 [ext_resource type="PackedScene" uid="uid://b2t6isobfl1bj" path="res://elements/Tilemaps/tile_map_dungeon.tscn" id="1_wqpxq"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://crdhmx2ggfxjo" path="res://elements/Objects/the_door.tscn" id="4_jvrcn"]
 [ext_resource type="PackedScene" uid="uid://cjoa8p8dyh62p" path="res://elements/Objects/the_roof.tscn" id="5_21h3e"]
 [ext_resource type="PackedScene" uid="uid://cwkpkjlqjpylx" path="res://elements/inventory/Items/stick_collectable.tscn" id="6_3hba5"]
+[ext_resource type="PackedScene" uid="uid://dc8wapfkx1144" path="res://elements/npc/npc's/npc.tscn" id="7_7njtm"]
 
 [node name="MegaGame" type="Node2D"]
 y_sort_enabled = true
@@ -71,6 +72,9 @@ position = Vector2(-129, 50)
 [node name="Adventurer" parent="." instance=ExtResource("2_mo0uf")]
 top_level = true
 position = Vector2(539, 438)
+
+[node name="npc" parent="." instance=ExtResource("7_7njtm")]
+position = Vector2(-123, -82)
 
 [editable path="The_door_to_college"]
 [editable path="The_door_social_behavior"]
